@@ -6,7 +6,7 @@
 /*   By: dhadding <daniel42.c@engineer.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 10:18:41 by dhadding          #+#    #+#             */
-/*   Updated: 2023/03/15 17:40:30 by dhadding         ###   ########.fr       */
+/*   Updated: 2023/03/15 10:49:35 by dhadding         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strrchr(const char *s, int c)
 	ptr = NULL;
 	while (*s)
 	{
-		if (*s == (char)c)
+		if (*s == (unsigned char)c)
 			ptr = (char *)s;
 		s++;
 	}

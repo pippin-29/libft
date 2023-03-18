@@ -58,7 +58,7 @@ all: $(NAME)
 %.o: %.c
 	$(CC) $(FLAG) -o $@ -c $<
 
-$(NAME):	$(OBJECT) $(BONUS_OBJECT)
+$(NAME):	$(OBJECT)
 					gcc $(FLAGS) -c $(SOURCE) $(BONUS) -I./
 					ar rc  $(NAME) $(OBJECT) $(BONUS_OBJECT)
 
