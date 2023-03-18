@@ -1,15 +1,12 @@
 # libft
 My work for 42 School, Contains a library designed for the work later assigned in the cursus.
 
+I have learnt alot about the logic involved in maipulating strings,
+I have also learnt about linked lists.
 
-ft_substr allocates to0 much memory in some cases, find a way to fix that if you can,
-i have, but, now it segfaults when len is specified as 0 and start is specified as a very large number
-
-ft_memmove crashes on one test (on my m1 macbook (not on the school mac) using francinette as a tester), 
-still passes moulinette
-
-ft_strrchr crashes on one test using francinette, again it didnt at school
-still passes moulinette, even without c typecast as a char
+My grade for the project was 120 out of 100.
 
 
-... TBC
+ft_substr will segfault on fsoares own test (No. 4) (KO segfault) using the francinette tester,
+ft_substr("hola", 4294967295, 0): Segmentation Fault, I have not tested if moulinette is okay with this, but i would say so.
+If you want a definite pass for substr, remove the helper function and malloc using len + 1, which will allocate too much memory in some cases. I have not found a fix for passing this test, although i see no reason to do that.
